@@ -5,8 +5,8 @@ body {
 }
 
 /*.container {*/
-    /*display: flex;*/
-    /*flex-wrap: wrap;*/
+/*display: flex;*/
+/*flex-wrap: wrap;*/
 /*}*/
 
 .header {
@@ -81,13 +81,17 @@ body {
     width: 30%;
 }
 
-githubLink {
+.github {
     color: darkblue;
-    diplay: block;
-    font-size: 10px;
+    display: block;
+    font-size: 15px;
     padding: 1.5em;
     text-align: center;
     text-decoration: none;
+}
+
+.octocat {
+    height: 50px;
 }
 
 a:hover {
@@ -104,5 +108,85 @@ a:hover {
 .projectPicture {
     display: block;
     margin: auto;
+    height: 200px;
+    width: 250px;
     /*width: 40%;*/
+}
+
+.nav {
+    align-items: center;
+    border-top: 4px solid darkblue;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.navItem1 {
+    font-size: 20px;
+    font-weight: 200;
+    margin-right: auto;
+    padding: 0 0 0 5px;
+}
+
+.navPic {
+    height: 23px;
+    padding: 10px 15px 10px 15px;
+}
+
+@media all and (min-width: 411px) and (max-width: 775px) {
+    .workItems {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        margin: 5px 0 5px 0;
+    }
+
+    .project {
+        width: 40%;
+    }
+}
+
+@media all and (max-width: 410px) {
+    .logo {
+        /*display: block;*/
+        height: 50px;
+        width: 50px;
+        padding: 4px;
+    }
+
+    .name {
+        font-size: 30px;
+        font-weight: 200;
+        padding: 5px 0 0 10px;
+        margin: 0;
+        text-align: right;
+    }
+
+    .title {
+        font-size: 15px;
+        margin: 0;
+        padding: 0 0 5px 10px;
+        text-align: right;
+    }
+
+    .picture {
+        height: 200px;
+        width: 100%;
+    }
+
+    .workHeader {
+        font-size: 20px;
+    }
+
+    .workItems {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .project {
+        width: 100%;
+    }
+
 }
