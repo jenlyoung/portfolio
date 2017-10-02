@@ -1,0 +1,108 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: darkblue;
+    padding: 10px;
+}
+
+/*.container {*/
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+/*}*/
+
+.header {
+    display: flex;
+    align-items: center;
+    border-bottom: 4px solid darkblue;
+    flex-direction: row;
+    width: 100%;
+}
+
+.logoContainer {
+    width: 30%;
+}
+
+.logo {
+    /*display: block;*/
+    height: 85px;
+    padding: 0 0 5px 5px;
+    width: 85px;
+}
+
+.titleContainer {
+    width: 70%;
+}
+
+.name {
+    font-size: 45px;
+    font-weight: 200;
+    padding: 5px 5px 0 10px;
+    margin: 0;
+    text-align: right;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 200;
+    margin: 0;
+    padding: 0 5px 5px 10px;
+    text-align: right;
+}
+
+.pictureContainer {
+    display: flex;
+    padding: 10px 0 10px 0;
+    margin: auto;
+    width: 100%;
+}
+
+.picture {
+    height: 400px;
+    width: 100%;
+}
+
+.workHeader {
+    display: flex;
+    font-size: 25px;
+    font-weight: 200;
+    padding: 5px;
+    text-align: left;
+    width: 100%;
+}
+
+.workItems {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.project {
+    margin: 10px 5px 10px 5px;
+    width: 30%;
+}
+
+githubLink {
+    color: darkblue;
+    diplay: block;
+    font-size: 10px;
+    padding: 1.5em;
+    text-align: center;
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+.projectName {
+    font-size: 20px;
+    font-weight: 200;
+    /*margin: 5px 0 5px 0;*/
+    text-align: center;
+}
+
+.projectPicture {
+    display: block;
+    margin: auto;
+    /*width: 40%;*/
+}
