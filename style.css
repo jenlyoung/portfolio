@@ -1,3 +1,9 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 body {
     padding: 10px;
     color: darkblue;
@@ -5,22 +11,23 @@ body {
     font-weight: 200;
 }
 
-/*changes the weight of all fonts, including headers*/
 .font {
+    color: darkblue;
+    font-family: 'Roboto', sans-serif;
     font-weight: 200;
 }
 
 /* container for the logo, name and title*/
 .header {
+    display: flex;
     align-items: center;
     border-bottom: 4px solid darkblue;
-    display: flex;
     flex-direction: row;
     width: 100%;
 }
 
 /* container for the logo*/
-.logoMain {
+.logo-main {
     width: 30%;
     margin: auto;
 }
@@ -33,7 +40,7 @@ body {
 }
 
 /* container for the name and title*/
-.nameMain {
+.name-main {
     width: 70%;
 }
 
@@ -52,7 +59,7 @@ body {
 }
 
 /* large picture in after header*/
-.pictureMain {
+.picture-main {
     display: flex;
     padding: 10px 0 10px 0;
     margin: auto;
@@ -65,7 +72,12 @@ body {
 }
 
 /* beginning of featured projects section*/
-.projectHeader {
+
+.project-main {
+    width: 100%;
+}
+
+.project-header {
     display: flex;
     font-size: 25px;
     margin: auto;
@@ -74,10 +86,10 @@ body {
     width: 100%;
 }
 
-.projectItems {
+.project-items {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     width: 100%;
 }
 
@@ -94,52 +106,52 @@ body {
 }
 
 .octocat {
-    height: 45px;
+    height: 50px;
 }
 
 a:hover {
     cursor: pointer;
 }
 
-.projectName {
+.project-name {
     font-size: 20px;
     text-align: center;
 }
 
-.projectPicture {
+.project-pic {
     display: block;
     margin: auto;
     height: 200px;
     width: 250px;
 }
 
-.nav {
+.footer {
     align-items: center;
     border-top: 4px solid darkblue;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    width: 100%;
 }
 
-.navItem1 {
+.foot-item1 {
     font-size: 20px;
     margin-right: auto;
     padding: 0 0 0 5px;
 }
 
 .navPic {
-    height: 23px;
-    padding: 10px 5px 10px 5px;
+    height: 40px;
+    padding: 10px 10px 10px 10px;
 }
 
 @media all and (min-width: 601px) and (max-width: 875px) {
-    .projectItems {
+    .project-items {
         margin: 5px 0 5px 0;
     }
 
     .project {
         width: 40%;
-        transition: width 0.7s ease-out;
     }
 }
 
@@ -163,17 +175,20 @@ a:hover {
         height: 200px;
     }
 
-    .projectHeader {
+    .project-header {
         font-size: 20px;
     }
 
-    .projectItems {
+    .project-items {
         flex-direction: column;
         justify-content: center;
     }
 
     .project {
         width: 100%;
-        transition: width 0.7s ease-out;
+    }
+
+    .navPic {
+        padding: 10px 5px 10px 5px;
     }
 }
