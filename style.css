@@ -5,17 +5,16 @@ body {
     font-weight: 200;
 }
 
+/*changes the weight of all fonts, including headers*/
 .font {
-    color: darkblue;
-    font-family: 'Roboto', sans-serif;
     font-weight: 200;
 }
 
 /* container for the logo, name and title*/
 .header {
-    display: flex;
     align-items: center;
     border-bottom: 4px solid darkblue;
+    display: flex;
     flex-direction: row;
     width: 100%;
 }
@@ -78,7 +77,7 @@ body {
 .projectItems {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     width: 100%;
 }
 
@@ -95,7 +94,7 @@ body {
 }
 
 .octocat {
-    height: 50px;
+    height: 45px;
 }
 
 a:hover {
@@ -118,7 +117,6 @@ a:hover {
     align-items: center;
     border-top: 4px solid darkblue;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
     justify-content: flex-end;
 }
