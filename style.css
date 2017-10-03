@@ -12,8 +12,6 @@ body {
 }
 
 .font {
-    color: darkblue;
-    font-family: 'Roboto', sans-serif;
     font-weight: 200;
 }
 
@@ -35,7 +33,7 @@ body {
 /* logo picture*/
 .logo {
     height: 85px;
-    padding: 0 0 5px 5px;
+    padding: 1px;
     width: 85px;
 }
 
@@ -68,6 +66,8 @@ body {
 
 .picture {
     height: 400px;
+    /*image-rendering: optimize-contrast;*/
+    /*image-resolution: from-image;*/
     width: 100%;
 }
 
@@ -121,11 +121,11 @@ a:hover {
 .project-pic {
     display: block;
     margin: auto;
-    height: 200px;
+    height: 250px;
     width: 250px;
 }
 
-.footer {
+.footer-main {
     align-items: center;
     border-top: 4px solid darkblue;
     display: flex;
