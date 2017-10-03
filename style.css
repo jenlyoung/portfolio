@@ -157,9 +157,8 @@ a:hover {
 
 @media all and (max-width: 600px) {
     .logo {
-        height: 50px;
-        width: 50px;
-        padding: 4px;
+        height: 65px;
+        width: 65px;
     }
 
     .name {
