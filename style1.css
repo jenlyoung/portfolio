@@ -1,14 +1,17 @@
 body {
-    font-family: 'Roboto', sans-serif;
-    color: darkblue;
     padding: 10px;
+    color: darkblue;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
 }
 
-/*.container {*/
-/*display: flex;*/
-/*flex-wrap: wrap;*/
-/*}*/
+.font {
+    color: darkblue;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+}
 
+/* container for the logo, name and title*/
 .header {
     display: flex;
     align-items: center;
@@ -17,38 +20,40 @@ body {
     width: 100%;
 }
 
-.logoContainer {
+/* container for the logo*/
+.logoMain {
     width: 30%;
+    margin: auto;
 }
 
+/* logo picture*/
 .logo {
-    /*display: block;*/
     height: 85px;
     padding: 0 0 5px 5px;
     width: 85px;
 }
 
-.titleContainer {
+/* container for the name and title*/
+.nameMain {
     width: 70%;
 }
 
 .name {
     font-size: 45px;
-    font-weight: 200;
     padding: 5px 5px 0 10px;
-    margin: 0;
+    margin: auto;
     text-align: right;
 }
 
 .title {
     font-size: 20px;
-    font-weight: 200;
-    margin: 0;
+    margin: auto;
     padding: 0 5px 5px 10px;
     text-align: right;
 }
 
-.pictureContainer {
+/* large picture in after header*/
+.pictureMain {
     display: flex;
     padding: 10px 0 10px 0;
     margin: auto;
@@ -60,19 +65,20 @@ body {
     width: 100%;
 }
 
-.workHeader {
+/* beginning of featured projects section*/
+.projectHeader {
     display: flex;
     font-size: 25px;
-    font-weight: 200;
-    padding: 5px;
+    margin: auto;
+    padding: 5px 0 5px 0;
     text-align: left;
     width: 100%;
 }
 
-.workItems {
+.projectItems {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
     width: 100%;
 }
 
@@ -81,13 +87,11 @@ body {
     width: 30%;
 }
 
+/* button for octocat*/
 .github {
-    color: darkblue;
     display: block;
     font-size: 15px;
-    padding: 1.5em;
     text-align: center;
-    text-decoration: none;
 }
 
 .octocat {
@@ -100,8 +104,6 @@ a:hover {
 
 .projectName {
     font-size: 20px;
-    font-weight: 200;
-    /*margin: 5px 0 5px 0;*/
     text-align: center;
 }
 
@@ -110,7 +112,6 @@ a:hover {
     margin: auto;
     height: 200px;
     width: 250px;
-    /*width: 40%;*/
 }
 
 .nav {
@@ -124,32 +125,28 @@ a:hover {
 
 .navItem1 {
     font-size: 20px;
-    font-weight: 200;
     margin-right: auto;
     padding: 0 0 0 5px;
 }
 
 .navPic {
     height: 23px;
-    padding: 10px 15px 10px 15px;
+    padding: 10px 5px 10px 5px;
 }
 
-@media all and (min-width: 411px) and (max-width: 775px) {
-    .workItems {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-around;
+@media all and (min-width: 601px) and (max-width: 875px) {
+    .projectItems {
         margin: 5px 0 5px 0;
     }
 
     .project {
         width: 40%;
+        transition: width 0.7s ease-out;
     }
 }
 
-@media all and (max-width: 410px) {
+@media all and (max-width: 600px) {
     .logo {
-        /*display: block;*/
         height: 50px;
         width: 50px;
         padding: 4px;
@@ -157,36 +154,28 @@ a:hover {
 
     .name {
         font-size: 30px;
-        font-weight: 200;
-        padding: 5px 0 0 10px;
-        margin: 0;
-        text-align: right;
     }
 
     .title {
         font-size: 15px;
-        margin: 0;
         padding: 0 0 5px 10px;
-        text-align: right;
     }
 
     .picture {
         height: 200px;
-        width: 100%;
     }
 
-    .workHeader {
+    .projectHeader {
         font-size: 20px;
     }
 
-    .workItems {
+    .projectItems {
         flex-direction: column;
         justify-content: center;
-        width: 100%;
     }
 
     .project {
         width: 100%;
+        transition: width 0.7s ease-out;
     }
-
 }

@@ -19,7 +19,7 @@ body {
     width: 100%;
 }
 
-.logoContainer {
+.logoMain {
     width: 30%;
 }
 
@@ -29,7 +29,7 @@ body {
     width: 65px;
 }
 
-.titleContainer {
+.nameMain {
     width: 70%;
 }
 
@@ -48,7 +48,7 @@ body {
     text-align: right;
 }
 
-.pictureContainer {
+.pictureMain {
     /*height: 200px;*/
     /*padding: 10px 0 10px 0;*/
     /*!*margin: auto;*!*/
@@ -57,7 +57,7 @@ body {
     display: flex;
 }
 
-.workHeader {
+.projectHeader {
     /*display: flex;*/
     font-size: 20px;
     font-weight: 200;
@@ -65,7 +65,7 @@ body {
     width: 100%;
 }
 
-.workItems {
+.projectItems {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -148,7 +148,7 @@ a:hover {
         text-align: right;
     }
 
-    .workHeader {
+    .projectHeader {
         display: flex;
         font-size: 25px;
         font-weight: 200;
@@ -157,7 +157,7 @@ a:hover {
     }
 
 
-    .workItems {
+    .projectItems {
         display: flex;
         flex-flow: row wrap;
         justify-content:space-around;
