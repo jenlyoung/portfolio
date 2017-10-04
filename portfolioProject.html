@@ -20,7 +20,14 @@
     </header>
     <!--decorative tech picture-->
     <div class="picture-main">
-        <img class="picture" src="tech_picture.jpeg" alt="computer">
+        <!--<img class="picture" src="tech_picture.jpeg" alt="computer">-->
+        <img class="picture" srcset="tech_picture-800.jpeg 800w,
+             tech_picture-1280.jpeg 1280w,
+             tech_picture-1920.jpeg 1920w"
+             sizes="(max-width: 800px) 760px,
+            (max-width: 1280px) 1240px,
+            1920px"
+             src="tech_picture-1920.jpeg" alt="JavaScript Picture">
     </div>
     <!--This section shows featured work projects--picture, name, github link-->
     <div class="project-main">
