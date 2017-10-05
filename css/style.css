@@ -67,7 +67,7 @@ body {
 }
 
 .picture {
-    max-height: 450px;
+    /*max-height: 450px;*/
     width: 100%;
 }
 
@@ -171,7 +171,7 @@ a:hover {
     }
 
     .picture {
-        height: 200px;
+        height: auto;
     }
 
     .project-header {
